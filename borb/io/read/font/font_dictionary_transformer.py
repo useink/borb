@@ -55,7 +55,7 @@ class FontDictionaryTransformer(Transformer):
 
         # convert dictionary like structure
         assert isinstance(object_to_transform, Dictionary)
-        subtype_name = object_to_transform["Subtype"]
+        subtype_name = object_to_transform.get("Subtype", None)
 
         font_obj: Optional[Font] = None
 
