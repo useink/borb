@@ -1,14 +1,7 @@
-# :mega: borb release 2.0.16
+# :mega: borb release 2.0.18
 
-This is a bugfix release.
+This release is a cleanup release.
 
-- Fixes how `Alignment.JUSTIFIED` is handled when there is only 1 line of text.
-- Fixed how hyphenation handles words shorter than 4 characters.
-- Everything formatted by `black`.
-- Added hyphenation for:
-  - `be` : Belarusian
-  - `bn` : Bengali
-  - `fi` : Finnish
-  - `lt` : Lithouanian
-  - `ro` : Romanian
-  - `ru` : Russian
+- The library (previously called `ptext`) still had some imports being renamed as `pDecimal` or `pString` or `pList`.
+  These occurences have been completely removed from the code.
+- `borb` can now create PDF documents that are almost PDF/A-1b valid. Some effort for fonts remains.
