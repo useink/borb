@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "borb"
+version = "2.0.18"
+description = ""
+authors = ["Joris Schellekens <joris.schellekens.1989@gmail.com>"]
+license = "AGPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+fonttools = ">=4.22.1"
+Pillow = ">=7.1.0"
+python-barcode = ">=0.13.1"
+qrcode = {version = ">=6.1", extras = ["pil"]}
+requests = ">=2.24.0"
+setuptools = ">=59.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
