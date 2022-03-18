@@ -1,7 +1,8 @@
-# :mega: borb release 2.0.18
+# :mega: borb release 2.0.21
 
-This release is a cleanup release.
+This release is a small feature release:
 
-- The library (previously called `ptext`) still had some imports being renamed as `pDecimal` or `pString` or `pList`.
-  These occurences have been completely removed from the code.
-- `borb` can now create PDF documents that are almost PDF/A-1b valid. Some effort for fonts remains.
+- `borb` can now read some broken PDF documents
+- tests have been added for this use case
+- more documentation has been added in general (less than 10 undocumented methods)
+- border for `RemoteGoToAnnotation` has been removed
